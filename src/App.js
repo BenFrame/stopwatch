@@ -19,7 +19,7 @@ function App() {
   }, [running])
 
   return (
-    <>
+    <div className='Stopwatch'>
       <h1>Stopwatch</h1>
       <div>
         <span>{('0' + Math.floor((time / 60000) % 60)).slice(-2)}:</span>
@@ -34,7 +34,7 @@ function App() {
         };   
         <button onClick={() => {setTime(0)}}>Reset</button>
       </div>
-    </>
+    </div>
   );
 }
 
